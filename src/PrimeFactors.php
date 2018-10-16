@@ -23,8 +23,7 @@ class PrimeFactors
 
 		}
 
-		return $prime_factorsh;
-
+		return $prime_factors;
 	}
 
 }
