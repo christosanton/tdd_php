@@ -36,13 +36,9 @@ class ClimbingLeaderBoard
 					$alice_ranks[$score] =1;
 					$scorestable[]=1; 
 				}
-
 			}
-
 		}
-
 
 		return $scorestable;
 	}
-
 }

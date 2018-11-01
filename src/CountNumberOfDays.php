@@ -73,11 +73,3 @@ class CountNumberOfDays
   }
 
 }
-
-
-/*$c = new CountNumberOfDays();
-
-print($c->monte_carlo(1000));
-
-
-*/

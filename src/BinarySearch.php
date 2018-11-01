@@ -17,37 +17,26 @@ class BinarySearch
 		}
 		
 		else{
-
 			while ($low <= $high) { 
 
+ 				$mid = intval(floor(($low + $high) / 2)); 
 
-				$mid = floor(($low + $high) / 2); 
-
-
-				if($arr[$mid] >= $x and $arr[$mid+1] <= $x ) { 
+				if($arr[$mid] >= $x and $arr[$mid+1] <= $x) { 
 					
-					$index= intval($mid)+2;
+					$index= $mid+2;
 
 					return $index; 
-
 				} 
 
 				if ($x < $arr[$mid]) { 
-            // search the left side of the array 
+            		// search the left side of the array 
 					$low = $mid + 1; 
 				} 
 				else { 
-            // search the right side of the array 
+            		// search the right side of the array 
 					$high = $mid -1; 
-				} 
-
+				}
 			}
-
-
-			
-
 		}
-		
 	}
-
 }
